@@ -1,0 +1,19 @@
+---
+downloads: []
+kernelspec:
+  name: python3
+  display_name: 'Python 3'
+---
+# External Resources
+
+## Iaido
+Youtube:
+- [website](https://)
+
+## Jodo
+
+## Kendo
+
+
+
+

@@ -1,0 +1,13 @@
+---
+downloads: []
+kernelspec:
+  name: python3
+  display_name: 'Python 3'
+---
+# Iaido|Jodo MitoriGeiko
+
+
+
+![shinpan shobu](_static/shinpan_shobu.png)
+
+[Play Shinpan Shobu](https://shinpan-shobu.github.io/)

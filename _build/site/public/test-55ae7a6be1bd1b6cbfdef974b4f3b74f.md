@@ -1,0 +1,23 @@
+---
+kernelspec:
+  name: python3
+  display_name: 'Python 3'
+---
+
+This is *emphasized*, **bold**, `inline code`, and [a link](https://Wikipedia.org).
+
+```python
+print("""
+This is a code block
+""")
+```
+> And this is a quote!
+
+
+```{code-cell} python
+:tags: ["remove-input"]
+from jupytercards import display_flashcards
+display_flashcards('example.json', shuffle_cards=True, front_colors='jupytercon', back_colors='jupytercon')
+```
+
+test
