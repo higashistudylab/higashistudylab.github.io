@@ -56,6 +56,65 @@ display_flashcards(flashcards, shuffle_cards=False)
 12. **Nukiuchi**
 :::
 
+---
+
+## Name - Ordinal number
+Japanese ordinal numbers such as `Ipponme` and `Nihonme` are often prepended to names or used to directly refer to Kata or Kihon within a set. 
+You can find a set to practice the literal meaning e.g. `Gohonme` -> `Fifth` [Here](numbers).
+
+::::{tab-set}
+
+:::{tab-item} Shuffled
+```{code-cell} python
+:tags: ["remove-input"]
+from jupytercards import display_flashcards
+import csv
+
+file = "iaido_kata_ordinal.csv"
+with open(file, newline="", encoding="utf-8") as f:
+    data = list(csv.DictReader(f, delimiter=';'))
+result = data.copy()
+for d in data:
+    result.append({'front': d['back'], 'back': d['front']})
+data = result
+display_flashcards(data, shuffle_cards=True)
+```
+:::
+:::{tab-item} Ordered
+```{code-cell} python
+:tags: ["remove-input"]
+from jupytercards import display_flashcards
+import csv
+
+file = "iaido_kata_ordinal.csv"
+with open(file, newline="", encoding="utf-8") as f:
+    data = list(csv.DictReader(f, delimiter=';'))
+result = data.copy()
+for d in data:
+    result.append({'front': d['back'], 'back': d['front']})
+data = result
+display_flashcards(data, shuffle_cards=False)
+```
+:::
+::::
+
+:::{dropdown} Answer Overview
+1. Ipponme - Mae
+2. Nihonme - Ushiro
+3. Sanbonme - Ukenagashi
+4. Yonhonme - Tsukaate
+5. Gohonme - Kesagiri
+6. Ropponme - Morotezuki
+7. Nanahonme - Sanpogiri
+8. Happonme - Ganmenate
+9. Kyuhonme - Soetezuki
+10. Jupponme - Shihogiri
+11. Juipponme - Sogiri
+12. Junihonme - Nukiuchi
+:::
+
+---
+
 ## Name - Meaning
 
 These flashcards are based on the translations found on the [Ryoshinkan website](https://www.ryoshinkan.org/more-detail/iaido-curriculum), which also includes further explanations of the kata naming, which is interesting and aids in memorization so reading it is highly recommended.
@@ -65,22 +124,32 @@ These flashcards are based on the translations found on the [Ryoshinkan website]
 :::{tab-item} Shuffled
 ```{code-cell} python
 :tags: ["remove-input"]
+from jupytercards import display_flashcards
 import csv
 
 file = "iaido_kata_desc.csv"
 with open(file, newline="", encoding="utf-8") as f:
     data = list(csv.DictReader(f, delimiter=';'))
+result = data.copy()
+for d in data:
+    result.append({'front': d['back'], 'back': d['front']})
+data = result
 display_flashcards(data, shuffle_cards=True)
 ```
 :::
 :::{tab-item} Ordered
 ```{code-cell} python
 :tags: ["remove-input"]
+from jupytercards import display_flashcards
 import csv
 
 file = "iaido_kata_desc.csv"
 with open(file, newline="", encoding="utf-8") as f:
     data = list(csv.DictReader(f, delimiter=';'))
+result = data.copy()
+for d in data:
+    result.append({'front': d['back'], 'back': d['front']})
+data = result
 display_flashcards(data, shuffle_cards=False)
 ```
 :::

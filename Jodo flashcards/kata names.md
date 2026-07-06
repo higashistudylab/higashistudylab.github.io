@@ -13,6 +13,7 @@ kernelspec:
 :::{tab-item} Shuffled
 ```{code-cell} python
 :tags: ["remove-input"]
+from jupytercards import display_flashcards
 
 from jupytercards import display_flashcards
 kata = ['Tsukizue', 'Suigetsu', 'Hissage', 'Shamen', 'Sakan', 'Monomi', 'Kasumi', 'Tachiotoshi', 'Raiuchi', 'Seigan', 'Midaredome', 'Ranai']
@@ -58,6 +59,66 @@ display_flashcards(flashcards, shuffle_cards=False)
 12. **Ranai** 
 :::
 
+
+---
+
+## Name - Ordinal number
+Japanese ordinal numbers such as `Ipponme` and `Nihonme` are often prepended to names or used to directly refer to Kata or Kihon within a set. 
+You can find a set to practice the literal meaning e.g. `Gohonme` -> `Fifth` [Here](numbers).
+
+::::{tab-set}
+
+:::{tab-item} Shuffled
+```{code-cell} python
+:tags: ["remove-input"]
+from jupytercards import display_flashcards
+import csv
+
+file = "jodo_kata_ordinal.csv"
+with open(file, newline="", encoding="utf-8") as f:
+    data = list(csv.DictReader(f, delimiter=';'))
+result = data.copy()
+for d in data:
+    result.append({'front': d['back'], 'back': d['front']})
+data = result
+display_flashcards(data, shuffle_cards=True)
+```
+:::
+:::{tab-item} Ordered
+```{code-cell} python
+:tags: ["remove-input"]
+from jupytercards import display_flashcards
+import csv
+
+file = "jodo_kata_ordinal.csv"
+with open(file, newline="", encoding="utf-8") as f:
+    data = list(csv.DictReader(f, delimiter=';'))
+result = data.copy()
+for d in data:
+    result.append({'front': d['back'], 'back': d['front']})
+data = result
+display_flashcards(data, shuffle_cards=False)
+```
+:::
+::::
+
+:::{dropdown} Answer Overview
+1. Ipponme - Tsukizue
+2. Nihonme - Suigetsu
+3. Sanbonme - Hissage
+4. Yonhonme - Shamen
+5. Gohonme - Sakan
+6. Ropponme - Monomi
+7. Nanahonme - Kasumi
+8. Happonme - Tachiotoshi
+9. Kyuhonme - Raiuchi
+10. Jupponme - Seigan
+11. Juipponme - Midaredome
+12. Junihonme - Ranai
+:::
+
+---
+
 ## Name - Meaning
 
 These flashcards are based on the translations found on the [Ryoshinkan website](https://www.ryoshinkan.org/more-detail/jodo-curriculum), which also includes further explanations of the kata naming, which is interesting and aids in memorization so reading it is highly recommended.
@@ -67,22 +128,32 @@ These flashcards are based on the translations found on the [Ryoshinkan website]
 :::{tab-item} Shuffled
 ```{code-cell} python
 :tags: ["remove-input"]
+from jupytercards import display_flashcards
 import csv
 
 file = "jodo_kata_desc.csv"
 with open(file, newline="", encoding="utf-8") as f:
     data = list(csv.DictReader(f, delimiter=';'))
+result = data.copy()
+for d in data:
+    result.append({'front': d['back'], 'back': d['front']})
+data = result
 display_flashcards(data, shuffle_cards=True)
 ```
 :::
 :::{tab-item} Ordered
 ```{code-cell} python
 :tags: ["remove-input"]
+from jupytercards import display_flashcards
 import csv
 
 file = "jodo_kata_desc.csv"
 with open(file, newline="", encoding="utf-8") as f:
     data = list(csv.DictReader(f, delimiter=';'))
+result = data.copy()
+for d in data:
+    result.append({'front': d['back'], 'back': d['front']})
+data = result
 display_flashcards(data, shuffle_cards=False)
 ```
 :::

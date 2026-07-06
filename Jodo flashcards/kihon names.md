@@ -11,6 +11,7 @@ kernelspec:
 :::{tab-item} Shuffled
 ```{code-cell} python
 :tags: ["remove-input"]
+from jupytercards import display_flashcards
 
 from jupytercards import display_flashcards
 kihon = ['Honteuchi', 'Gyakuteuchi', 'Hikiotoshiuchi', 'Kaeshizuki', 'Gyakutezuki', 'Makiotoshi', 'Kuritsuke', 'Kurihanashi', 'Taiatari', 'Tsukihazushiuchi', 'Dobaraiuchi', 'Taihazushiuchi']
@@ -56,3 +57,17 @@ display_flashcards(flashcards, shuffle_cards=False)
 11. **Dobaraiuchi**
 12. **Taihazushiuchi**
 :::
+
+
+Ipponme - First
+Nihonme - Second
+Sanbonme - Third
+Yonhonme - Fourth
+Gohonme - Fifth
+Ropponme - Sixth
+Nanahonme - Seventh
+Happonme - Eighth
+Kyuhonme - Ninth
+Jupponme - Tenth
+Juipponme - Eleventh
+Junihonme - Twelfth
