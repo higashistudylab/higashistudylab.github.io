@@ -8,7 +8,7 @@ kernelspec:
 
 Shinpan Shobu consists of a collection of matches and the video will pause just before the flags are shown, giving you the chance to give your desision before being influenced by the official results. The goal is to sharpen your eyes by refereeing along with experienced shinpan.
 
-![shinpan shobu](_static/shinpan_shobu.png)
+![shinpan shobu](_static/shinpan_shobu.jpg)
 
 [Play Shinpan Shobu](https://shinpan-shobu.github.io/)
 

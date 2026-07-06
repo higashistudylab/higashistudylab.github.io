@@ -8,7 +8,7 @@ kernelspec:
 
 In essence this website just contains a index of YouTube videos which I have tagged and timestamped with the kata that are shown, I have also added buttons to enable skipping to a given kata.
 
-![Mitori Geiko](_static/mitori_geiko.png)
+![Mitori Geiko](_static/mitori_geiko.jpg)
 
 [Mitori Geiko Website](https://mitorigeiko.github.io)
 
