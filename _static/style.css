@@ -13,3 +13,12 @@
 p {
   margin-bottom: 0.5em !important;
 }
+
+html.light .next {
+  opacity: 0.6 !important;
+}
+
+html.dark .next {
+  opacity: 0.8 !important;
+  color: #fffafbff;
+}
