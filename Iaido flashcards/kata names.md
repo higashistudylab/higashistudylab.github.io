@@ -4,8 +4,9 @@ kernelspec:
   name: python3
   display_name: 'Python 3'
 ---
-# Iaido Kata Names
+# Iaido Kata
 
+## Name - Number
 ::::{tab-set}
 
 :::{tab-item} Shuffled
@@ -53,4 +54,49 @@ display_flashcards(flashcards, shuffle_cards=False)
 10. **Shihogiri**
 11. **Sougiri**
 12. **Nukiuchi**
+:::
+
+## Name - Meaning
+
+These flashcards are based on the translations found on the [Ryoshinkan website](https://www.ryoshinkan.org/more-detail/iaido-curriculum), which also includes further explanations of the kata naming, which is interesting and aids in memorization so reading it is highly recommended.
+
+::::{tab-set}
+
+:::{tab-item} Shuffled
+```{code-cell} python
+:tags: ["remove-input"]
+import csv
+
+file = "iaido_kata_desc.csv"
+with open(file, newline="", encoding="utf-8") as f:
+    data = list(csv.DictReader(f, delimiter=';'))
+display_flashcards(data, shuffle_cards=True)
+```
+:::
+:::{tab-item} Ordered
+```{code-cell} python
+:tags: ["remove-input"]
+import csv
+
+file = "iaido_kata_desc.csv"
+with open(file, newline="", encoding="utf-8") as f:
+    data = list(csv.DictReader(f, delimiter=';'))
+display_flashcards(data, shuffle_cards=False)
+```
+:::
+::::
+
+:::{dropdown} Answer Overview
+1. Mae - Front
+2. Ushiro - Rear
+3. Ukenagashi - Deflection
+4. Tsukaate - Handle strike
+5. Kesagiri - Diagonal cut
+6. Morotezuki - Two-handed thrust
+7. Sanpogiri - Three-way cut
+8. Ganmenate - Face strike
+9. Soetezuki - Joined-hand thrust
+10. Shihogiri - Four-way cut
+11. Sogiri - Complete cutting
+12. Nukiuchi - Sudden draw
 :::
