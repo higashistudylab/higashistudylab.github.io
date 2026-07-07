@@ -16,7 +16,7 @@ kernelspec:
 from jupytercards import display_flashcards
 import csv
 
-file = "numbers_reading.csv"
+file = "ordinal_numbers.csv"
 with open(file, newline="", encoding="utf-8") as f:
     data = list(csv.DictReader(f, delimiter=';'))
 result = data.copy()
@@ -32,7 +32,7 @@ display_flashcards(data, shuffle_cards=True)
 from jupytercards import display_flashcards
 import csv
 
-file = "numbers_reading.csv"
+file = "ordinal_numbers.csv"
 with open(file, newline="", encoding="utf-8") as f:
     data = list(csv.DictReader(f, delimiter=';'))
 result = data.copy()

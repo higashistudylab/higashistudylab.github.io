@@ -8,42 +8,6 @@ kernelspec:
 
 ## Numbers - Reading
 
-::::{tab-set}
-
-:::{tab-item} Shuffled
-```{code-cell} python
-:tags: ["remove-input"]
-from jupytercards import display_flashcards
-import csv
-
-file = "numbers_reading.csv"
-with open(file, newline="", encoding="utf-8") as f:
-    data = list(csv.DictReader(f, delimiter=';'))
-result = data.copy()
-for d in data:
-    result.append({'front': d['back'], 'back': d['front']})
-data = result
-display_flashcards(data, shuffle_cards=True)
-```
-:::
-:::{tab-item} Ordered
-```{code-cell} python
-:tags: ["remove-input"]
-from jupytercards import display_flashcards
-import csv
-
-file = "numbers_reading.csv"
-with open(file, newline="", encoding="utf-8") as f:
-    data = list(csv.DictReader(f, delimiter=';'))
-result = data.copy()
-for d in data:
-    result.append({'front': d['back'], 'back': d['front']})
-data = result
-display_flashcards(data, shuffle_cards=False)
-```
-:::
-::::
-
 :::{dropdown} Answer Overview
 1. 1 - ichi (いち)
 2. 2 - ni (に)
@@ -70,42 +34,6 @@ display_flashcards(data, shuffle_cards=False)
 ---
 
 ## Numbers - Kanji
-
-::::{tab-set}
-
-:::{tab-item} Shuffled
-```{code-cell} python
-:tags: ["remove-input"]
-from jupytercards import display_flashcards
-import csv
-
-file = "numbers_kanji.csv"
-with open(file, newline="", encoding="utf-8") as f:
-    data = list(csv.DictReader(f, delimiter=';'))
-result = data.copy()
-for d in data:
-    result.append({'front': d['back'], 'back': d['front']})
-data = result
-display_flashcards(data, shuffle_cards=True)
-```
-:::
-:::{tab-item} Ordered
-```{code-cell} python
-:tags: ["remove-input"]
-from jupytercards import display_flashcards
-import csv
-
-file = "numbers_kanji.csv"
-with open(file, newline="", encoding="utf-8") as f:
-    data = list(csv.DictReader(f, delimiter=';'))
-result = data.copy()
-for d in data:
-    result.append({'front': d['back'], 'back': d['front']})
-data = result
-display_flashcards(data, shuffle_cards=False)
-```
-:::
-::::
 
 :::{dropdown} Answer Overview
 1. 1 - 一
