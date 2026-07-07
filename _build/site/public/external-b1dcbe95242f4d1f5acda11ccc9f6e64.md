@@ -7,12 +7,6 @@ kernelspec:
 # External Resources
 
 A collection of links to other budo related resources on the internet.
-<!-- 
-### Blogs
-
-- [SHUGYO](https://iaidojodotraining.blogspot.com/) | Andy Watson's blog containing posts about
-
-- [The Budo Bum](https://budobum.blogspot.com/) -->
 
 ## Iaido
 
